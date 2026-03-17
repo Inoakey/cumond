@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { onMount, tick } from 'svelte';
 	import MonthMiniCalendar from './MonthMiniCalendar.svelte';
 	import { t } from '$lib/i18n/index.js';
 	import type { Timeslot } from '$lib/types/poll.js';
@@ -23,7 +24,8 @@
 	let desktopGrid: HTMLDivElement | undefined = $state();
 	let mobileGrid: HTMLDivElement | undefined = $state();
 
-	$effect(() => {
+	onMount(async () => {
+		await tick();
 		const scrollTop = (DEFAULT_SCROLL_HOUR * 60 / GRID) * ROW_H;
 		desktopGrid?.scrollTo({ top: scrollTop });
 		mobileGrid?.scrollTo({ top: scrollTop });
