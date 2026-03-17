@@ -115,6 +115,8 @@
 		"retentionText": "Les sondages sont automatiquement et irrévocablement supprimés après la date d'expiration choisie par le créateur (90 jours ou 1 an). Les administrateurs peuvent supprimer manuellement leur sondage à tout moment.",
 		"rightsTitle": "Vos droits",
 		"rightsText": "En vertu de la loi suisse sur la protection des données (nLPD), vous avez le droit d'accéder à vos données, de les rectifier et de les supprimer. Comme nous n'avons pas accès à vos données de sondage en raison du chiffrement, vous pouvez les supprimer vous-même à tout moment via le lien admin.",
+		"opensourceTitle": "Open Source",
+		"opensourceText": "Cumond est open source (AGPL-3.0). Le code source complet est accessible publiquement – vous pouvez vérifier vous-même comment vos données sont traitées.",
 		"contactTitle": "Contact",
 		"contactText": "Pour toute question relative à la protection des données, contactez-nous à :",
 		"updatedAt": "Mise à jour : mars 2026"

@@ -55,6 +55,14 @@
 		</section>
 
 		<section>
+			<h2 class="mb-1 font-semibold">{$t('privacy.opensourceTitle')}</h2>
+			<p>{$t('privacy.opensourceText')}</p>
+			<p class="mt-1">
+				<a href="https://github.com/Inoakey/cumond" target="_blank" rel="noopener noreferrer" class="text-accent underline hover:no-underline">github.com/Inoakey/cumond</a>
+			</p>
+		</section>
+
+		<section>
 			<h2 class="mb-1 font-semibold">{$t('privacy.contactTitle')}</h2>
 			<p class="text-text-muted">{$t('privacy.contactText')}</p>
 			<p class="mt-1 text-text-muted">cumond@pm.me</p>

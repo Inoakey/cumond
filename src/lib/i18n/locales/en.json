@@ -115,6 +115,8 @@
 		"retentionText": "Polls are automatically and irrevocably deleted after the expiry date chosen by the creator (90 days or 1 year). Admins can manually delete their poll at any time.",
 		"rightsTitle": "Your rights",
 		"rightsText": "Under the Swiss Data Protection Act (nDSG), you have the right to access, rectify and delete your data. Since we have no access to your poll data due to encryption, you can delete it yourself at any time via the admin link.",
+		"opensourceTitle": "Open Source",
+		"opensourceText": "Cumond is open source (AGPL-3.0). The complete source code is publicly available – you can verify for yourself how your data is processed.",
 		"contactTitle": "Contact",
 		"contactText": "For data protection questions, contact us at:",
 		"updatedAt": "Last updated: March 2026"

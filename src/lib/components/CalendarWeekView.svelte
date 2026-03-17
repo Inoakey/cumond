@@ -10,8 +10,9 @@
 
 	let { selectedSlots, onchange }: Props = $props();
 
-	const HOUR_START = 7;
-	const HOUR_END = 21;
+	const HOUR_START = 0;
+	const HOUR_END = 24;
+	const DEFAULT_SCROLL_HOUR = 7;
 	const GRID = 15; // minutes
 	const ROW_H = 16; // px per grid unit – compact
 	const TOTAL_ROWS = ((HOUR_END - HOUR_START) * 60) / GRID;
@@ -19,6 +20,14 @@
 
 	let weekStart = $state(getWeekStart(new Date()));
 	let mobileDay = $state(0);
+	let desktopGrid: HTMLDivElement | undefined = $state();
+	let mobileGrid: HTMLDivElement | undefined = $state();
+
+	$effect(() => {
+		const scrollTop = (DEFAULT_SCROLL_HOUR * 60 / GRID) * ROW_H;
+		desktopGrid?.scrollTo({ top: scrollTop });
+		mobileGrid?.scrollTo({ top: scrollTop });
+	});
 
 	type DragMode = 'none' | 'create' | 'move' | 'resize';
 	let mode: DragMode = $state('none');
@@ -286,7 +295,7 @@
 				{/each}
 			</div>
 
-			<div class="grid overflow-y-auto" style="grid-template-columns: 2.5rem repeat(7, 1fr); max-height: 450px;">
+			<div bind:this={desktopGrid} class="grid overflow-y-auto" style="grid-template-columns: 2.5rem repeat(7, 1fr); max-height: 450px;">
 				<!-- Hour labels -->
 				<div class="relative" style="height: {totalHeight}px;">
 					{#each hours as hour}
@@ -352,7 +361,7 @@
 
 		<!-- Mobile single day -->
 		<div class="select-none lg:hidden">
-			<div class="grid overflow-y-auto" style="grid-template-columns: 2.5rem 1fr; max-height: 400px;">
+			<div bind:this={mobileGrid} class="grid overflow-y-auto" style="grid-template-columns: 2.5rem 1fr; max-height: 400px;">
 				<div class="relative" style="height: {totalHeight}px;">
 					{#each hours as hour}
 						<div class="absolute left-0 w-full pr-1 text-right text-[10px] text-text-muted"

@@ -115,6 +115,8 @@
 		"retentionText": "Umfragen werden nach dem vom Ersteller gewählten Ablaufdatum (90 Tage oder 1 Jahr) automatisch und unwiderruflich gelöscht. Admins können ihre Umfrage jederzeit manuell löschen.",
 		"rightsTitle": "Ihre Rechte",
 		"rightsText": "Unter dem Schweizer Datenschutzgesetz (nDSG) haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Da wir aufgrund der Verschlüsselung keinen Zugang zu Ihren Umfragedaten haben, können Sie diese jederzeit selbst über den Admin-Link löschen.",
+		"opensourceTitle": "Open Source",
+		"opensourceText": "Cumond ist Open Source (AGPL-3.0). Der vollständige Quellcode ist öffentlich einsehbar – Sie können selbst überprüfen, wie Ihre Daten verarbeitet werden.",
 		"contactTitle": "Kontakt",
 		"contactText": "Bei Fragen zum Datenschutz erreichen Sie uns unter:",
 		"updatedAt": "Stand: März 2026"
