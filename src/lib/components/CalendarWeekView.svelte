@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount, tick } from 'svelte';
 	import MonthMiniCalendar from './MonthMiniCalendar.svelte';
 	import { t } from '$lib/i18n/index.js';
 	import type { Timeslot } from '$lib/types/poll.js';
@@ -21,15 +20,17 @@
 
 	let weekStart = $state(getWeekStart(new Date()));
 	let mobileDay = $state(0);
-	let desktopGrid: HTMLDivElement | undefined = $state();
-	let mobileGrid: HTMLDivElement | undefined = $state();
+	let didScroll = false;
 
-	onMount(async () => {
-		await tick();
-		const scrollTop = (DEFAULT_SCROLL_HOUR * 60 / GRID) * ROW_H;
-		desktopGrid?.scrollTo({ top: scrollTop });
-		mobileGrid?.scrollTo({ top: scrollTop });
-	});
+	function scrollToDefault(node: HTMLDivElement) {
+		if (!didScroll) {
+			didScroll = true;
+			requestAnimationFrame(() => {
+				const scrollTop = (DEFAULT_SCROLL_HOUR * 60 / GRID) * ROW_H;
+				node.scrollTop = scrollTop;
+			});
+		}
+	}
 
 	type DragMode = 'none' | 'create' | 'move' | 'resize';
 	let mode: DragMode = $state('none');
@@ -297,7 +298,7 @@
 				{/each}
 			</div>
 
-			<div bind:this={desktopGrid} class="grid overflow-y-auto" style="grid-template-columns: 2.5rem repeat(7, 1fr); max-height: 450px;">
+			<div use:scrollToDefault class="grid overflow-y-auto" style="grid-template-columns: 2.5rem repeat(7, 1fr); max-height: 450px;">
 				<!-- Hour labels -->
 				<div class="relative" style="height: {totalHeight}px;">
 					{#each hours as hour}
@@ -363,7 +364,7 @@
 
 		<!-- Mobile single day -->
 		<div class="select-none lg:hidden">
-			<div bind:this={mobileGrid} class="grid overflow-y-auto" style="grid-template-columns: 2.5rem 1fr; max-height: 400px;">
+			<div use:scrollToDefault class="grid overflow-y-auto" style="grid-template-columns: 2.5rem 1fr; max-height: 400px;">
 				<div class="relative" style="height: {totalHeight}px;">
 					{#each hours as hour}
 						<div class="absolute left-0 w-full pr-1 text-right text-[10px] text-text-muted"
