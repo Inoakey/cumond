@@ -13,7 +13,7 @@ const securityHeaders: Record<string, string> = {
 };
 
 const productionCSP =
-	"default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'";
+	"default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; font-src 'self'; connect-src 'self'";
 
 export const handle: Handle = async ({ event, resolve }) => {
 	// H-001: Body size limit for API routes
