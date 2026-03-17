@@ -32,7 +32,7 @@ Deine Daten gehören dir – nicht mal wir können sie lesen.
 
 ### Quick Start
 ```bash
-git clone https://github.com/DEIN_USERNAME/cumond.git
+git clone https://github.com/Inoakey/cumond.git
 cd cumond
 cp .env.example .env
 # .env anpassen (CUMOND_DB_PASS setzen)
@@ -40,7 +40,7 @@ docker compose -f docker-compose.cumond.yml up -d
 ```
 
 ### Vollständige Anleitung
-Siehe [server-setup.md](server-setup.md)
+Siehe [SETUP.md](SETUP.md)
 
 ## Lizenz
 
