@@ -14,3 +14,7 @@ cumond-git-deploy-briefing.md
 cumond-security-audit-prompt.md
 CLAUDE.md
 server-setup.md
+deploy.sh
+docker-compose.cumond.yml
+nginx/
+scripts/
