@@ -1,0 +1,123 @@
+{
+	"app": {
+		"name": "Cumond",
+		"tagline": "Find the right time together – no tracking, no account. End-to-end encrypted, hosted in Switzerland."
+	},
+	"poll": {
+		"title": "Title",
+		"titlePlaceholder": "e.g. Team Meeting Q2",
+		"titleRequired": "Please enter a title.",
+		"location": "Location",
+		"locationPlaceholder": "e.g. Office Zurich / Online",
+		"description": "Description",
+		"descriptionPlaceholder": "Optional details about the poll...",
+		"timeslots": "Select time slots",
+		"timeslotsRequired": "Please select at least one time slot.",
+		"timeslotsCount": "{n} time slot selected | {n} time slots selected",
+		"create": "Create poll",
+		"creating": "Creating...",
+		"created": "Poll created",
+		"createdHint": "Share the participant link. Keep the admin link safe.",
+		"newPoll": "Create new poll",
+		"encrypted": "All data is encrypted in your browser before reaching the server.",
+		"notFound": "Poll not found.",
+		"expired": "This poll has expired.",
+		"noKey": "No decryption key found in the link.",
+		"loading": "Loading and decrypting poll..."
+	},
+	"expiry": {
+		"label": "Validity",
+		"days90": "90 days",
+		"days365": "1 year"
+	},
+	"visibility": {
+		"label": "Response visibility",
+		"all": "All responses visible",
+		"allDesc": "Participants can see everyone's responses.",
+		"own": "Only own response visible",
+		"ownDesc": "Prevents tactical voting – only the admin sees all responses."
+	},
+	"link": {
+		"participant": "Participant link",
+		"participantDesc": "Send this link to the participants.",
+		"admin": "Admin link",
+		"adminDesc": "Only for you – to view results and manage the poll.",
+		"copy": "Copy",
+		"copied": "Copied"
+	},
+	"participant": {
+		"name": "Your name",
+		"namePlaceholder": "First and last name",
+		"nameRequired": "Please enter your name.",
+		"chooseAvailability": "Choose your availability",
+		"chooseHint": "Click a time slot: + Yes → ~ If necessary → − No → deselect. Unselected slots automatically count as No.",
+		"submit": "Submit response",
+		"submitting": "Sending...",
+		"thanks": "Thank you, {name}!",
+		"saved": "Your response has been saved encrypted.",
+		"another": "Submit another response",
+		"editing": "Editing response",
+		"update": "Update response",
+		"encryptedNote": "Your response is encrypted – only those with the link can read it.",
+		"yourAnswer": "Your response",
+		"responses": "Previous responses ({n})",
+		"responsesHidden": "{n} response received – only yours is visible. | {n} responses received – only yours is visible."
+	},
+	"status": {
+		"yes": "Yes",
+		"yesShort": "+",
+		"maybe": "If necessary",
+		"maybeShort": "~",
+		"no": "No",
+		"noShort": "−"
+	},
+	"admin": {
+		"view": "Admin view",
+		"bestSlots": "Best time slots",
+		"best": "BEST",
+		"allResponses": "All responses ({n})",
+		"noResponses": "No responses yet.",
+		"refresh": "Refresh responses",
+		"delete": "Delete poll",
+		"deleteConfirm": "Really delete this poll?",
+		"deleteHint": "All responses will be permanently deleted.",
+		"deleteForever": "Delete permanently",
+		"deleting": "Deleting...",
+		"cancel": "Cancel",
+		"deleted": "Poll deleted",
+		"deletedHint": "All data has been permanently removed.",
+		"invalidLink": "Invalid admin link – key or admin token missing.",
+		"loading": "Loading and decrypting...",
+		"timeslots": "{n} time slots",
+		"visibilityAll": "All",
+		"visibilityOwn": "Own only"
+	},
+	"calendar": {
+		"prevMonth": "Previous month",
+		"nextMonth": "Next month"
+	},
+	"privacy": {
+		"link": "Privacy",
+		"title": "Privacy Policy",
+		"intro": "This privacy policy explains how Cumond handles your data.",
+		"responsibleTitle": "Responsible",
+		"responsibleText": "Cumond is operated by:",
+		"principleTitle": "Core principle: Zero-Knowledge Architecture",
+		"principleText": "Cumond uses a zero-knowledge architecture. All poll data (title, description, location, time slots and responses) is encrypted in your browser using AES-256-GCM before reaching the server. The encryption key is stored exclusively in the URL fragment (after the # sign) and is never transmitted to the server. This means: we cannot read or analyse your poll data.",
+		"dataTitle": "What data is processed?",
+		"dataEncrypted": "Encrypted poll data: Stored on the server only in encrypted form. Without the key in the link, this data is unreadable to anyone – including us.",
+		"dataHashes": "Admin token hash: A cryptographic hash (SHA-256) to verify admin rights. The actual token never leaves your browser.",
+		"dataServer": "Technical data: IP address (only temporarily in memory for rate limiting, not stored), poll expiry date.",
+		"dataNone": "We do not use cookies, tracking, analytics or third-party services.",
+		"hostingTitle": "Hosting",
+		"hostingText": "Cumond is hosted on a server by Exoscale in the Zurich data centre (Switzerland). No data is transferred abroad.",
+		"retentionTitle": "Data retention",
+		"retentionText": "Polls are automatically and irrevocably deleted after the expiry date chosen by the creator (90 days or 1 year). Admins can manually delete their poll at any time.",
+		"rightsTitle": "Your rights",
+		"rightsText": "Under the Swiss Data Protection Act (nDSG), you have the right to access, rectify and delete your data. Since we have no access to your poll data due to encryption, you can delete it yourself at any time via the admin link.",
+		"contactTitle": "Contact",
+		"contactText": "For data protection questions, contact us at:",
+		"updatedAt": "Last updated: March 2026"
+	},
+	"error": "Error"
+}

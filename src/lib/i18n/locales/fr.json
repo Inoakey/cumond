@@ -1,0 +1,123 @@
+{
+	"app": {
+		"name": "Cumond",
+		"tagline": "Trouver le bon créneau ensemble – sans tracking, sans compte. Chiffré de bout en bout, hébergé en Suisse."
+	},
+	"poll": {
+		"title": "Titre",
+		"titlePlaceholder": "p.ex. Réunion d'équipe T2",
+		"titleRequired": "Veuillez saisir un titre.",
+		"location": "Lieu",
+		"locationPlaceholder": "p.ex. Bureau Genève / En ligne",
+		"description": "Description",
+		"descriptionPlaceholder": "Détails optionnels du sondage...",
+		"timeslots": "Sélectionner les créneaux",
+		"timeslotsRequired": "Veuillez sélectionner au moins un créneau.",
+		"timeslotsCount": "{n} créneau sélectionné | {n} créneaux sélectionnés",
+		"create": "Créer le sondage",
+		"creating": "Création en cours...",
+		"created": "Sondage créé",
+		"createdHint": "Partagez le lien participant. Conservez le lien admin en lieu sûr.",
+		"newPoll": "Créer un nouveau sondage",
+		"encrypted": "Toutes les données sont chiffrées dans votre navigateur avant d'être envoyées au serveur.",
+		"notFound": "Sondage introuvable.",
+		"expired": "Ce sondage a expiré.",
+		"noKey": "Aucune clé de déchiffrement trouvée dans le lien.",
+		"loading": "Chargement et déchiffrement du sondage..."
+	},
+	"expiry": {
+		"label": "Validité",
+		"days90": "90 jours",
+		"days365": "1 an"
+	},
+	"visibility": {
+		"label": "Visibilité des réponses",
+		"all": "Toutes les réponses visibles",
+		"allDesc": "Les participants voient les réponses de tous les autres.",
+		"own": "Seule sa propre réponse visible",
+		"ownDesc": "Empêche le vote tactique – seul l'admin voit toutes les réponses."
+	},
+	"link": {
+		"participant": "Lien participant",
+		"participantDesc": "Envoyez ce lien aux participants.",
+		"admin": "Lien admin",
+		"adminDesc": "Uniquement pour vous – pour voir les résultats et gérer le sondage.",
+		"copy": "Copier",
+		"copied": "Copié"
+	},
+	"participant": {
+		"name": "Votre nom",
+		"namePlaceholder": "Prénom et nom",
+		"nameRequired": "Veuillez saisir votre nom.",
+		"chooseAvailability": "Choisissez vos disponibilités",
+		"chooseHint": "Cliquez sur un créneau : + Oui → ~ Si nécessaire → − Non → désélectionner. Les créneaux non sélectionnés comptent comme Non.",
+		"submit": "Envoyer la réponse",
+		"submitting": "Envoi en cours...",
+		"thanks": "Merci, {name} !",
+		"saved": "Votre réponse a été enregistrée de manière chiffrée.",
+		"another": "Soumettre une autre réponse",
+		"editing": "Modification de la réponse",
+		"update": "Mettre à jour la réponse",
+		"encryptedNote": "Votre réponse est chiffrée – seuls ceux qui ont le lien peuvent la lire.",
+		"yourAnswer": "Votre réponse",
+		"responses": "Réponses précédentes ({n})",
+		"responsesHidden": "{n} réponse reçue – seule la vôtre est visible. | {n} réponses reçues – seule la vôtre est visible."
+	},
+	"status": {
+		"yes": "Oui",
+		"yesShort": "+",
+		"maybe": "Si nécessaire",
+		"maybeShort": "~",
+		"no": "Non",
+		"noShort": "−"
+	},
+	"admin": {
+		"view": "Vue admin",
+		"bestSlots": "Meilleurs créneaux",
+		"best": "BEST",
+		"allResponses": "Toutes les réponses ({n})",
+		"noResponses": "Aucune réponse reçue.",
+		"refresh": "Actualiser les réponses",
+		"delete": "Supprimer le sondage",
+		"deleteConfirm": "Vraiment supprimer le sondage ?",
+		"deleteHint": "Toutes les réponses seront définitivement supprimées.",
+		"deleteForever": "Supprimer définitivement",
+		"deleting": "Suppression...",
+		"cancel": "Annuler",
+		"deleted": "Sondage supprimé",
+		"deletedHint": "Toutes les données ont été définitivement supprimées.",
+		"invalidLink": "Lien admin invalide – clé ou jeton admin manquant.",
+		"loading": "Chargement et déchiffrement...",
+		"timeslots": "{n} créneaux",
+		"visibilityAll": "Toutes",
+		"visibilityOwn": "Propre uniquement"
+	},
+	"calendar": {
+		"prevMonth": "Mois précédent",
+		"nextMonth": "Mois suivant"
+	},
+	"privacy": {
+		"link": "Confidentialité",
+		"title": "Déclaration de confidentialité",
+		"intro": "Cette déclaration de confidentialité explique comment Cumond traite vos données.",
+		"responsibleTitle": "Responsable",
+		"responsibleText": "Cumond est exploité par :",
+		"principleTitle": "Principe de base : architecture Zero-Knowledge",
+		"principleText": "Cumond utilise une architecture Zero-Knowledge. Toutes les données de sondage (titre, description, lieu, créneaux horaires et réponses) sont chiffrées dans votre navigateur avec AES-256-GCM avant d'atteindre le serveur. La clé de chiffrement se trouve exclusivement dans le fragment d'URL (après le signe #) et n'est jamais transmise au serveur. Cela signifie que nous ne pouvons ni lire ni analyser vos données de sondage.",
+		"dataTitle": "Quelles données sont traitées ?",
+		"dataEncrypted": "Données de sondage chiffrées : stockées sur le serveur uniquement sous forme chiffrée. Sans la clé dans le lien, ces données sont illisibles pour quiconque – y compris pour nous.",
+		"dataHashes": "Hash du jeton admin : un hash cryptographique (SHA-256) pour vérifier les droits d'administration. Le jeton réel ne quitte jamais votre navigateur.",
+		"dataServer": "Données techniques : adresse IP (uniquement temporairement en mémoire pour la limitation de débit, non stockée), date d'expiration du sondage.",
+		"dataNone": "Nous n'utilisons ni cookies, ni tracking, ni analytics, ni services tiers.",
+		"hostingTitle": "Hébergement",
+		"hostingText": "Cumond est hébergé sur un serveur chez Exoscale dans le centre de données de Zurich (Suisse). Aucune donnée n'est transférée à l'étranger.",
+		"retentionTitle": "Durée de conservation",
+		"retentionText": "Les sondages sont automatiquement et irrévocablement supprimés après la date d'expiration choisie par le créateur (90 jours ou 1 an). Les administrateurs peuvent supprimer manuellement leur sondage à tout moment.",
+		"rightsTitle": "Vos droits",
+		"rightsText": "En vertu de la loi suisse sur la protection des données (nLPD), vous avez le droit d'accéder à vos données, de les rectifier et de les supprimer. Comme nous n'avons pas accès à vos données de sondage en raison du chiffrement, vous pouvez les supprimer vous-même à tout moment via le lien admin.",
+		"contactTitle": "Contact",
+		"contactText": "Pour toute question relative à la protection des données, contactez-nous à :",
+		"updatedAt": "Mise à jour : mars 2026"
+	},
+	"error": "Erreur"
+}

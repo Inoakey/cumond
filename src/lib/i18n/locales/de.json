@@ -1,0 +1,123 @@
+{
+	"app": {
+		"name": "Cumond",
+		"tagline": "Gemeinsam den richtigen Termin finden – ohne Tracking, ohne Konto. Ende-zu-Ende verschlüsselt, gehostet in der Schweiz."
+	},
+	"poll": {
+		"title": "Titel",
+		"titlePlaceholder": "z.B. Team-Meeting Q2",
+		"titleRequired": "Bitte gib einen Titel ein.",
+		"location": "Ort",
+		"locationPlaceholder": "z.B. Büro Zürich / Online",
+		"description": "Beschreibung",
+		"descriptionPlaceholder": "Optionale Details zur Umfrage...",
+		"timeslots": "Zeitslots auswählen",
+		"timeslotsRequired": "Bitte wähle mindestens einen Zeitslot aus.",
+		"timeslotsCount": "{n} Zeitslot ausgewählt | {n} Zeitslots ausgewählt",
+		"create": "Umfrage erstellen",
+		"creating": "Wird erstellt...",
+		"created": "Umfrage erstellt",
+		"createdHint": "Teile den Teilnehmer-Link. Bewahre den Admin-Link sicher auf.",
+		"newPoll": "Neue Umfrage erstellen",
+		"encrypted": "Alle Daten werden in deinem Browser verschlüsselt, bevor sie den Server erreichen.",
+		"notFound": "Umfrage nicht gefunden.",
+		"expired": "Diese Umfrage ist abgelaufen.",
+		"noKey": "Kein Entschlüsselungsschlüssel im Link gefunden.",
+		"loading": "Umfrage wird geladen und entschlüsselt..."
+	},
+	"expiry": {
+		"label": "Gültigkeit",
+		"days90": "90 Tage",
+		"days365": "1 Jahr"
+	},
+	"visibility": {
+		"label": "Sichtbarkeit der Antworten",
+		"all": "Alle Antworten sichtbar",
+		"allDesc": "Teilnehmende sehen die Antworten aller anderen.",
+		"own": "Nur eigene Antwort sichtbar",
+		"ownDesc": "Verhindert taktisches Abstimmen – nur der Admin sieht alle Antworten."
+	},
+	"link": {
+		"participant": "Teilnehmer-Link",
+		"participantDesc": "Diesen Link an die Teilnehmenden senden.",
+		"admin": "Admin-Link",
+		"adminDesc": "Nur für dich – damit siehst du die Ergebnisse und kannst die Umfrage verwalten.",
+		"copy": "Kopieren",
+		"copied": "Kopiert"
+	},
+	"participant": {
+		"name": "Dein Name",
+		"namePlaceholder": "Vor- und Nachname",
+		"nameRequired": "Bitte gib deinen Namen ein.",
+		"chooseAvailability": "Wähle deine Verfügbarkeit",
+		"chooseHint": "Klicke auf einen Zeitslot: + Ja → ~ Notfalls → − Nein → abwählen. Nicht gewählte Termine zählen automatisch als Nein.",
+		"submit": "Antwort absenden",
+		"submitting": "Wird gesendet...",
+		"thanks": "Danke, {name}!",
+		"saved": "Deine Antwort wurde verschlüsselt gespeichert.",
+		"another": "Weitere Antwort abgeben",
+		"editing": "Antwort wird bearbeitet",
+		"update": "Antwort aktualisieren",
+		"encryptedNote": "Deine Antwort wird verschlüsselt – nur wer den Link hat, kann sie lesen.",
+		"yourAnswer": "Deine Antwort",
+		"responses": "Bisherige Antworten ({n})",
+		"responsesHidden": "{n} Antwort eingegangen – nur deine eigene ist für dich sichtbar. | {n} Antworten eingegangen – nur deine eigene ist für dich sichtbar."
+	},
+	"status": {
+		"yes": "Ja",
+		"yesShort": "+",
+		"maybe": "Notfalls",
+		"maybeShort": "~",
+		"no": "Nein",
+		"noShort": "−"
+	},
+	"admin": {
+		"view": "Admin-Ansicht",
+		"bestSlots": "Beste Termine",
+		"best": "BEST",
+		"allResponses": "Alle Antworten ({n})",
+		"noResponses": "Noch keine Antworten eingegangen.",
+		"refresh": "Antworten aktualisieren",
+		"delete": "Umfrage löschen",
+		"deleteConfirm": "Umfrage wirklich löschen?",
+		"deleteHint": "Alle Antworten werden unwiderruflich gelöscht.",
+		"deleteForever": "Endgültig löschen",
+		"deleting": "Wird gelöscht...",
+		"cancel": "Abbrechen",
+		"deleted": "Umfrage gelöscht",
+		"deletedHint": "Alle Daten wurden unwiderruflich entfernt.",
+		"invalidLink": "Ungültiger Admin-Link – Schlüssel oder Admin-Token fehlt.",
+		"loading": "Wird geladen und entschlüsselt...",
+		"timeslots": "{n} Zeitslots",
+		"visibilityAll": "Alle",
+		"visibilityOwn": "Nur eigene"
+	},
+	"calendar": {
+		"prevMonth": "Vorheriger Monat",
+		"nextMonth": "Nächster Monat"
+	},
+	"privacy": {
+		"link": "Datenschutz",
+		"title": "Datenschutzerklärung",
+		"intro": "Diese Datenschutzerklärung erläutert, wie Cumond mit Ihren Daten umgeht.",
+		"responsibleTitle": "Verantwortlich",
+		"responsibleText": "Cumond wird betrieben von:",
+		"principleTitle": "Grundprinzip: Zero-Knowledge-Architektur",
+		"principleText": "Cumond verwendet eine Zero-Knowledge-Architektur. Alle Umfragedaten (Titel, Beschreibung, Ort, Zeitslots und Antworten) werden in Ihrem Browser mit AES-256-GCM verschlüsselt, bevor sie den Server erreichen. Der Verschlüsselungsschlüssel befindet sich ausschliesslich im URL-Fragment (nach dem #-Zeichen) und wird niemals an den Server übertragen. Das bedeutet: Wir können Ihre Umfragedaten weder lesen noch auswerten.",
+		"dataTitle": "Welche Daten werden verarbeitet?",
+		"dataEncrypted": "Verschlüsselte Umfragedaten: Werden auf dem Server nur in verschlüsselter Form gespeichert. Ohne den Schlüssel im Link sind diese Daten für niemanden lesbar – auch nicht für uns.",
+		"dataHashes": "Admin-Token-Hash: Ein kryptographischer Hash (SHA-256) zur Verifizierung der Adminrechte. Der eigentliche Token verlässt Ihren Browser nicht.",
+		"dataServer": "Technische Daten: IP-Adresse (nur temporär im Arbeitsspeicher für Rate-Limiting, wird nicht gespeichert), Ablaufdatum der Umfrage.",
+		"dataNone": "Wir verwenden keine Cookies, kein Tracking, keine Analytics und keine Drittanbieter-Dienste.",
+		"hostingTitle": "Hosting",
+		"hostingText": "Cumond wird auf einem Server bei Exoscale im Rechenzentrum Zürich (Schweiz) betrieben. Es werden keine Daten ins Ausland übermittelt.",
+		"retentionTitle": "Speicherdauer",
+		"retentionText": "Umfragen werden nach dem vom Ersteller gewählten Ablaufdatum (90 Tage oder 1 Jahr) automatisch und unwiderruflich gelöscht. Admins können ihre Umfrage jederzeit manuell löschen.",
+		"rightsTitle": "Ihre Rechte",
+		"rightsText": "Unter dem Schweizer Datenschutzgesetz (nDSG) haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Da wir aufgrund der Verschlüsselung keinen Zugang zu Ihren Umfragedaten haben, können Sie diese jederzeit selbst über den Admin-Link löschen.",
+		"contactTitle": "Kontakt",
+		"contactText": "Bei Fragen zum Datenschutz erreichen Sie uns unter:",
+		"updatedAt": "Stand: März 2026"
+	},
+	"error": "Fehler"
+}
