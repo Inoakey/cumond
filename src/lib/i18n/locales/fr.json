@@ -112,7 +112,7 @@
 		"hostingTitle": "Hébergement",
 		"hostingText": "Cumond est hébergé sur un serveur chez Exoscale dans le centre de données de Zurich (Suisse). Aucune donnée n'est transférée à l'étranger.",
 		"retentionTitle": "Durée de conservation",
-		"retentionText": "Les sondages sont automatiquement et irrévocablement supprimés après la date d'expiration choisie par le créateur (90 jours ou 1 an). Les administrateurs peuvent supprimer manuellement leur sondage à tout moment.",
+		"retentionText": "Les sondages sont automatiquement et irrévocablement supprimés après la date d'expiration choisie par le créateur (90 jours ou 1 an). Les administrateurs peuvent supprimer manuellement leur sondage à tout moment. Des sauvegardes quotidiennes de la base de données sont créées et automatiquement supprimées après 7 jours. Les données des sauvegardes sont également stockées exclusivement sous forme chiffrée.",
 		"rightsTitle": "Vos droits",
 		"rightsText": "En vertu de la loi suisse sur la protection des données (nLPD), vous avez le droit d'accéder à vos données, de les rectifier et de les supprimer. Comme nous n'avons pas accès à vos données de sondage en raison du chiffrement, vous pouvez les supprimer vous-même à tout moment via le lien admin.",
 		"opensourceTitle": "Open Source",

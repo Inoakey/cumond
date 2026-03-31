@@ -112,7 +112,7 @@
 		"hostingTitle": "Hosting",
 		"hostingText": "Cumond wird auf einem Server bei Exoscale im Rechenzentrum Zürich (Schweiz) betrieben. Es werden keine Daten ins Ausland übermittelt.",
 		"retentionTitle": "Speicherdauer",
-		"retentionText": "Umfragen werden nach dem vom Ersteller gewählten Ablaufdatum (90 Tage oder 1 Jahr) automatisch und unwiderruflich gelöscht. Admins können ihre Umfrage jederzeit manuell löschen.",
+		"retentionText": "Umfragen werden nach dem vom Ersteller gewählten Ablaufdatum (90 Tage oder 1 Jahr) automatisch und unwiderruflich gelöscht. Admins können ihre Umfrage jederzeit manuell löschen. Es werden tägliche Sicherungskopien der Datenbank erstellt, die nach 7 Tagen automatisch gelöscht werden. Auch in den Backups liegen die Daten ausschliesslich in verschlüsselter Form vor.",
 		"rightsTitle": "Ihre Rechte",
 		"rightsText": "Unter dem Schweizer Datenschutzgesetz (nDSG) haben Sie das Recht auf Auskunft, Berichtigung und Löschung Ihrer Daten. Da wir aufgrund der Verschlüsselung keinen Zugang zu Ihren Umfragedaten haben, können Sie diese jederzeit selbst über den Admin-Link löschen.",
 		"opensourceTitle": "Open Source",

@@ -112,7 +112,7 @@
 		"hostingTitle": "Hosting",
 		"hostingText": "Cumond is hosted on a server by Exoscale in the Zurich data centre (Switzerland). No data is transferred abroad.",
 		"retentionTitle": "Data retention",
-		"retentionText": "Polls are automatically and irrevocably deleted after the expiry date chosen by the creator (90 days or 1 year). Admins can manually delete their poll at any time.",
+		"retentionText": "Polls are automatically and irrevocably deleted after the expiry date chosen by the creator (90 days or 1 year). Admins can manually delete their poll at any time. Daily database backups are created and automatically deleted after 7 days. Backup data is also stored exclusively in encrypted form.",
 		"rightsTitle": "Your rights",
 		"rightsText": "Under the Swiss Data Protection Act (nDSG), you have the right to access, rectify and delete your data. Since we have no access to your poll data due to encryption, you can delete it yourself at any time via the admin link.",
 		"opensourceTitle": "Open Source",
